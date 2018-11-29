@@ -16,11 +16,11 @@
 برای استفاده به صورت زیر عمل می‌کنید:
 
 ```/bin/bash
-> /bin/bash dockerDebugNode.sh --help
+> /bin/bash dockerProxyPort.sh --help
 Run docker debug for node js app
 
 Usage:
-  bash dockerDebugNode.sh [OPTIONS...] CONTAINER
+  bash dockerProxyPort.sh [OPTIONS...] CONTAINER
 
 Options:
   -p, --port=public-port:private-port
@@ -28,9 +28,9 @@ Options:
   -h, --help
 
 Examples:
-> bash dockerDebugNode.sh -p 5858:35858 container-name
-> bash dockerDebugNode.sh -p 5858-5860:35858-35860 container-name
-> bash dockerDebugNode.sh -p 5858-5860:35858-35860 -p 9229:3229 container-name
+> bash dockerProxyPort.sh -p 5858:35858 container-name
+> bash dockerProxyPort.sh -p 5858-5860:35858-35860 container-name
+> bash dockerProxyPort.sh -p 5858-5860:35858-35860 -p 9229:3229 container-name
 ```
 
 
